@@ -1,0 +1,233 @@
+body {
+    font-family: 'Arial, sans-serif';
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    text-align: center;
+    background-color: #2ecc71;
+    color: white;
+    font-family: 'Great Vibes', cursive;
+    padding: 10px 0;
+    position: relative;
+}
+
+header h1 {
+    font-size: 5em;
+    margin: 0;
+    padding-top: 50px; 
+    line-height: 1; 
+}
+
+header p {
+    font-size: 1.5em;
+    margin: 0;
+    padding-bottom: 20px;
+    line-height: 1;
+}
+
+nav {
+    background-color: #2ecc71;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1001; 
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+}
+
+#hero {
+    position: relative;
+    text-align: center;
+    color: rgb(102, 197, 130);
+    padding: 0;
+}
+
+#hero img {
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+}
+
+#hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.countdown {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Great Vibes', sans-serif;
+}
+
+.countdown div {
+    margin: 0 10px;
+    text-align: center;
+    font-size: 2em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#program {
+    background-image: url('plant-background.jpg');
+    background-size: cover;
+    color: white;
+}
+
+#location {
+    background-image: url('plant-background.jpg');
+    background-size: cover;
+    color: white;
+}
+
+#rsvp {
+    background-image: url('plant-background.jpg');
+    background-size: cover;
+    color: white;
+}
+
+#program, #location, #story {
+    padding: 50px;
+    text-align: center;
+    background-color: white;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.photo-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 10px solid #2ecc71; /* Taille du contour */
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 626px;
+    max-height: 417px;
+    background-color: #2ecc71; /* Fond vert pour le conteneur */
+}
+
+.photo-gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Coins arrondis pour l'image */
+    transition: transform 0.3s ease;
+}
+
+.photo-gallery:hover {
+    transform: scale(1.05); /* Effet de zoom au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Ombre augmentée au survol */
+}
+
+.photo-gallery:hover img {
+    transform: rotate(3.5deg) scale(1.1); /* Rotation et zoom de l'image au survol */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #2ecc71;
+    color: white;
+}
+
+form {
+    background-color: rgb(22, 70, 32);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px white;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    font-size: 1.2em;
+    color: white;
+    align-self: flex-start; /* Align labels to the start */
+}
+
+form input[type="text"],
+form textarea {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form input[type="radio"] {
+    margin: 0 10px 0 0;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+form input[type="submit"] {
+    background-color: #2ecc71;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: center; /* Center the submit button */
+    
+}
+
+form input[type="submit"]:hover {
+    background-color: #27ae60;
+}
+
+#rsvp {
+    padding: 50px;
+    text-align: center;
+    background-color: rgb(37, 102, 64);
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px white;
+
+}
